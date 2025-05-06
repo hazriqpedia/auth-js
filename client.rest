@@ -1,0 +1,42 @@
+###
+http://localhost:3000
+
+###
+http://localhost:3000/vars
+
+
+###
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+   "user_id": "user1",
+   "login": "email1",
+   "password": "safepass1" 
+}
+
+###
+
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+   "user_id": "user2",
+   "login": "email2",
+   "password": "safepass2" 
+}
+
+###
+
+POST http://localhost:3000/api/authenticate
+Content-Type: application/json
+
+{
+    "login": "email2",
+    "password": "safepass2" 
+}
+
+
+###
+POST http://localhost:3000/api/logout
+Authorization: Bearer ed631e4c-be8a-4340-8d62-8b5c49e2e8a4
