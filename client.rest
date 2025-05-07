@@ -40,3 +40,18 @@ Content-Type: application/json
 ###
 POST http://localhost:3000/api/logout
 Authorization: Bearer ed631e4c-be8a-4340-8d62-8b5c49e2e8a4
+
+###
+GET http://localhost:3000/api/articles
+Authorization: Bearer b01ac03a-2fed-4c5e-9887-2518bb292128
+
+###
+POST http://localhost:3000/api/articles
+Authorization: Bearer b01ac03a-2fed-4c5e-9887-2518bb292128
+Content-Type: application/json
+
+{
+ "title": "Article title2",
+ "content": "Article content2",
+ "visibility": "public"  
+}
